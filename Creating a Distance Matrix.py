@@ -37,10 +37,7 @@ class all_differences_for_each_pair:
             elif key[0]==list(dict_.keys())[3]:
                    list_for_each_key3.append("%.5f" %float(pairs_and_differences[key]*0.1))
         return(list_for_each_key0,list_for_each_key1,list_for_each_key2,list_for_each_key3)
-        print(list_for_each_key0)
-        print(list_for_each_key1)
-        print(list_for_each_key2)
-        print(list_for_each_key3)
+        
     def organize_the_output(list_for_each_key0,list_for_each_key1,list_for_each_key2,list_for_each_key3):
         data = {"0": list_for_each_key0,"1": list_for_each_key1,"2":list_for_each_key2,"3":list_for_each_key3} 
         df = pd.DataFrame(data,index=['', '','',''])
